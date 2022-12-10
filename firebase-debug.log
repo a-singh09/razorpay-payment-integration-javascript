@@ -1,0 +1,35 @@
+[debug] [2022-12-09T11:53:25.785Z] ----------------------------------------------------------------------
+[debug] [2022-12-09T11:53:25.789Z] Command:       /home/apple/.nvm/versions/node/v19.2.0/bin/node /usr/local/bin/firebase serve
+[debug] [2022-12-09T11:53:25.790Z] CLI Version:   11.16.1
+[debug] [2022-12-09T11:53:25.790Z] Platform:      linux
+[debug] [2022-12-09T11:53:25.790Z] Node Version:  v19.2.0
+[debug] [2022-12-09T11:53:25.791Z] Time:          Fri Dec 09 2022 17:23:25 GMT+0530 (India Standard Time)
+[debug] [2022-12-09T11:53:25.791Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-09T11:53:25.918Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-09T11:53:25.919Z] > authorizing via signed-in user (anshdeeps.cs.21@nitj.ac.in)
+[debug] [2022-12-09T11:53:25.919Z] [iam] checking project payments-d90c4 for permissions ["firebase.projects.get"]
+[debug] [2022-12-09T11:53:25.923Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/payments-d90c4:testIamPermissions [none]
+[debug] [2022-12-09T11:53:25.924Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/payments-d90c4:testIamPermissions x-goog-quota-user=projects/payments-d90c4
+[debug] [2022-12-09T11:53:25.924Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/payments-d90c4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-09T11:53:27.536Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/payments-d90c4:testIamPermissions 200
+[debug] [2022-12-09T11:53:27.536Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/payments-d90c4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-09T11:53:27.539Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4 [none]
+[debug] [2022-12-09T11:53:28.343Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4 200
+[debug] [2022-12-09T11:53:28.344Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4 {"projectId":"payments-d90c4","projectNumber":"192367222836","displayName":"payments","name":"projects/payments-d90c4","resources":{"hostingSite":"payments-d90c4"},"state":"ACTIVE","etag":"1_ac5f6a9a-eec5-4c5c-81ea-ef0f81eee157"}
+[info] 
+[info] === Serving from '/home/apple/gitProjects/razorpay-payment-integration-javascript'...
+[info] 
+[debug] [2022-12-09T11:53:28.356Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/payments-d90c4/sites 
+[debug] [2022-12-09T11:53:29.467Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/payments-d90c4/sites 200
+[debug] [2022-12-09T11:53:29.467Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/payments-d90c4/sites {"sites":[{"name":"projects/payments-d90c4/sites/payments-d90c4","defaultUrl":"https://payments-d90c4.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-09T11:53:29.468Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4/webApps/-/config [none]
+[debug] [2022-12-09T11:53:30.555Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4/webApps/-/config 200
+[debug] [2022-12-09T11:53:30.556Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4/webApps/-/config {"projectId":"payments-d90c4","appId":"1:192367222836:web:6a6e87f75f2524a68aea61","storageBucket":"payments-d90c4.appspot.com","apiKey":"AIzaSyCBrTTNVZS6vJX2u-_DLxoOpbMTpSq4fVQ","authDomain":"payments-d90c4.firebaseapp.com","messagingSenderId":"192367222836"}
+[debug] [2022-12-09T11:53:30.561Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4 [none]
+[debug] [2022-12-09T11:53:31.208Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4 200
+[debug] [2022-12-09T11:53:31.208Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/payments-d90c4 {"projectId":"payments-d90c4","projectNumber":"192367222836","displayName":"payments","name":"projects/payments-d90c4","resources":{"hostingSite":"payments-d90c4"},"state":"ACTIVE","etag":"1_ac5f6a9a-eec5-4c5c-81ea-ef0f81eee157"}
+[info] i  hosting[payments-d90c4]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[payments-d90c4]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [09/Dec/2022:11:53:40 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Dec/2022:11:53:40 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Dec/2022:11:53:40 +0000] "GET /payment.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Dec/2022:11:53:40 +0000] \"GET /payment.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0\""}}
